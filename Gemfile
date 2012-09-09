@@ -6,7 +6,7 @@ gem 'rails', '3.2.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
+  # gem 'sqlite3', '1.3.5' # No DB
   gem 'rspec-rails', '2.11.0'
 end
 
@@ -24,9 +24,15 @@ end
 
 gem 'jquery-rails'
 
-group :production do
-  gem 'pg', '0.12.2' # PostgreSQL gem for deployment to Heroku
+group :test do
+  # Using some Capybara functions in testing a la ROR 3 Tutorial
+  gem 'capybara', '1.1.2'
 end
+
+# No DB
+# group :production do
+#   gem 'pg', '0.12.2' # PostgreSQL gem for deployment to Heroku
+# end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
