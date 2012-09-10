@@ -5,7 +5,7 @@ describe "Statics" do
   describe "Home page" do
 
     it "should have the content 'Rich'" do
-      visit '/static/home'
+      visit '/'
       page.should have_content 'Rich'
     end
   end
@@ -13,7 +13,7 @@ describe "Statics" do
   describe "About page" do
 
     it "should have the content 'About Rich'" do
-      visit '/static/about'
+      visit '/about'
       page.should have_content 'About Rich'
     end
   end
@@ -21,7 +21,7 @@ describe "Statics" do
   describe "Contact page" do
 
     it "should have the content 'Contact Rich'" do
-      visit '/static/contact'
+      visit '/contact'
       page.should have_content 'Contact Rich'
     end
   end
@@ -29,7 +29,7 @@ describe "Statics" do
   describe "Arts page" do
 
     it "should have the content 'About the Arts'" do
-      visit '/static/arts'
+      visit '/arts'
       page.should have_content 'About the Arts'
     end
   end

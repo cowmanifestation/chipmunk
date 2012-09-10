@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div>
+      <%= link_to "Home",           '/' %>
+      <%= link_to "About Rich",     '/about' %>
+      <%= link_to "About the Arts", '/arts' %>
+      <%= link_to "Contact",        '/contact' %>
+    </div>
+  </header>
 
-<%= yield %>
+  <%= yield %>
 
+  <footer>
+    <p>Copyright 2012 Fireheart Monkey Productions</p>
+  </footer>
 </body>
 </html>
