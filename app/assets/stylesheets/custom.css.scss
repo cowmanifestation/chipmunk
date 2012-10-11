@@ -1,4 +1,11 @@
+/* Set Bootstrap variables here, before importing bootstrap.  They can be seen, with their default settings,
+ * here: (on windows)
+ * c:Ruby192/lib/ruby/gems/1.9.1/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/variables.scss
+ */
 $navbarBrandColor: #FF0000;
+$navbarLinkColor: #0064cd;
+$navbarLinkColorHover: #049cdb;
+$navbarLinkColorActive: white;
 @import "bootstrap";
 
 /* Thanks to http://www.cssstickyfooter.com/using-sticky-footer-code.html for
