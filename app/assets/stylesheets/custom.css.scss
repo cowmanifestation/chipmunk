@@ -1,10 +1,10 @@
 /* Set Bootstrap variables here, before importing bootstrap.  They can be seen, with their default settings,
  * here: (on windows)
- * c:Ruby192/lib/ruby/gems/1.9.1/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/variables.scss
+ * c:Ruby192/lib/ruby/gems/1.9.1/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_variables.scss
  */
 $navbarBrandColor: #FF0000;
-$navbarLinkColor: #0064cd;
-$navbarLinkColorHover: #049cdb;
+$navbarLinkColor: #049cdb;
+$navbarLinkColorHover: #9cf;
 $navbarLinkColorActive: white;
 @import "bootstrap";
 
@@ -19,7 +19,16 @@ body {
 }
 
 ul.nav li a {
+  font-size: 20px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
   font-weight: bold;
+}
+
+ul.ui-tabs-nav {
+  display: inline-block;
+  float: none;
 }
 
 #page-contents { min-height: 100%; }
